@@ -5,7 +5,7 @@ def url():
   url = requests.get(f'https://faceslitevn.site/grap/index.php?id={id}').json
   print(url)
 threads=[]
-for i in range(200):
+for i in range(1000):
     kk=threading.Thread(target=url)
     kk.start()
   
